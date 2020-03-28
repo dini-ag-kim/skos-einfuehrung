@@ -4,6 +4,22 @@ Diese Einführung soll die Nutzung der Beschreibungssprache **Simple Knowledge O
 
 Diese Seite beinhaltet einen theoretischen Überblick. Wer direkt praktisch einsteigen möchte, kann im [Tutorial](skos-tutorial.md) ein SKOS-Vokabular von Grund auf erstellen und veröffentlichen.
 
+## Todo
+
+- [ ] Einleitung
+  - [x] Kurzbeschreibung
+  - [x] Verwendungszwecke
+  - [x] Vorteile
+  - [x] Kodierung
+    - [x] RDF/Turtle
+    - [x] Beispiel Standard-Thesaurus Wirtschaft
+  - [ ] Elemente von SKOS
+- [ ] Tutorial
+- [ ] Häufig gestellte Fragen
+- [ ] Anwendungsbeispiele
+- [ ] Software
+- [ ] Literatur
+
 ## Kurzbeschreibung
 
 Simple Knowledge Organization System (SKOS) ist eine Beschreibungssprache für kontrollierte Vokabulare (Thesauri, Klassifikationen, Taxonomien usw.). Ziel des Standards ist die einfache Veröffentlichung und Nutzung von kontrollierten Vokabularen als [Linked Open Data](https://de.wikipedia.org/wiki/Linked_Open_Data). SKOS wurde 2009 [vom W3C als Empfehlung verabschiedet](https://www.w3.org/TR/2009/REC-skos-reference-20090818/) und findet seitdem zunehmende Verbreitung als Austauschformat:
