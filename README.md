@@ -1,24 +1,38 @@
-# Einführung in SKOS für den Bereich Open Educational Resources (OER)
+# Einführung in SKOS am Beispiel von Open Educational Resources (OER)
 
-Diese Einführung soll die Nutzung der Beschreibungssprache **Simple Knowledge Organization System** (SKOS) für kontrollierte Vokabulare erleichtern und damit die Standardisierung von Metadaten im Bereich [Open Educational Resources](https://de.wikipedia.org/wiki/Open_Educational_Resources) (OER) unterstützen.
+Diese Einführung soll die Nutzung der Beschreibungssprache **Simple Knowledge Organization System** (SKOS) für kontrollierte Vokabulare erleichtern. Wir diskutieren den Zweck und die Vorteile am Beispiel von [Open Educational Resources](https://de.wikipedia.org/wiki/Open_Educational_Resources) (OER).
 
 Diese Seite beinhaltet einen theoretischen Überblick. Wer direkt praktisch einsteigen möchte, kann im [Tutorial](skos-tutorial.md) ein SKOS-Vokabular von Grund auf erstellen und veröffentlichen.
 
-## Todo
+## Wozu kontrollierte Vokabulare?
 
-- [ ] Einleitung
-  - [x] Kurzbeschreibung
-  - [x] Verwendungszwecke
-  - [x] Vorteile
-  - [x] Kodierung
-    - [x] RDF/Turtle
-    - [x] Beispiel Standard-Thesaurus Wirtschaft
-  - [ ] Elemente von SKOS
-- [ ] Tutorial
-- [ ] Häufig gestellte Fragen
-- [ ] Anwendungsbeispiele
-- [ ] Software
-- [ ] Literatur
+Grob betrachtet bestehen alle Metadaten aus Elementen und zugehörigen Werten. Beispiel:
+
+```
+title: Beispiel
+creator: Anne
+date: 2020-04-21
+language: de
+subject: Bauingenieurwesen
+```
+
+Um diese für Menschen gut lesbare Beschreibung konsistent innerhalb eines technischen Systems anzuwenden, wird ein Metadatenschema definiert. Dieses legt fest, welche Elemente es gibt, ob diese verpflichtend oder optional sind und welche Inhaltstypen sie haben dürfen. Ein Schema könnte vereinfacht so aussehen:
+
+```
+mandatory:
+    - title: string
+    - creator: string
+optional:
+    - date: ISO8601
+    - language: ISO639-1
+    - subject: string
+```
+
+Hier ist die Datumsangabe nach ISO 8601 (JJJJ-MM-TT) und die Sprachangabe nach ISO 639-1 (2-stellige Sprachkürzel) formatiert. Fehlerhafte Eingaben wie `2020-21-04 ` (Monat und Tag vertauscht) oder `dd` (nicht existentes Sprachkürzel) können bei der Eingabe vom System erkannt und mit einer Fehlermeldung quittiert werden. Im Element `subject` ist jede Zeichenkette (string) erlaubt, d.h. Schreibfehler wie `Bauingeneurwesen` oder ein ähnliches Wort wie `Bautechnik` werden vom System nicht als Problem erkannt.
+
+Nehmen wir an, wir wollen auf einem Hochschulschriftenserver die Fachdisziplin eindeutig erfassen, damit in einer Recherche danach gefiltert werden kann und in einer internen Statistik die Schriften nach Fachdisziplin gezählt werden können. Dann bietet es sich an, im Metadatenschema für das Element `subject` eine Wortliste zu definieren, die alle an der Hochschule vertretenen Fachdisziplinen beinhaltet. Wie so ein kontrolliertes Vokabular mit SKOS kodiert werden kann, wird weiter unten erläutert.
+
+Durch die begriffliche Kontrolle werden Schreibfehler, Bedeutungs- und Bezeichnungsvielfalt vermieden. Die dadurch erzeugte Einheitlichkeit fördert die Auffindbarkeit, Maschinenlesbarkeit und Nachnutzbarkeit der Metadaten.
 
 ## Kurzbeschreibung
 
