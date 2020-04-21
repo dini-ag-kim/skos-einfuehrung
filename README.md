@@ -233,8 +233,8 @@ Unser obiges Beispiel könnte im Format RDF/Turtle also so aussehen:
 <19040-0> a skos:Concept ;
     skos:prefLabel "Cooperation"@en, "Kooperation"@de ;
     skos:altLabel "Zusammenarbeit"@de ;
-    skos:narrower <http://zbw.eu/stw/descriptor/12036-5>, <http://zbw.eu/stw/descriptor/18775-0>, <http://zbw.eu/stw/descriptor/18822-3>, <http://zbw.eu/stw/descriptor/19708-3> ;
-    skos:related <http://zbw.eu/stw/descriptor/12580-3>, <http://zbw.eu/stw/descriptor/18657-6>, <http://zbw.eu/stw/descriptor/20402-3> ;
+    skos:narrower <12036-5>, <18775-0>, <18822-3>, <19708-3> ;
+    skos:related <12580-3>, <18657-6>, <20402-3> ;
     skos:exactMatch <http://aims.fao.org/aos/agrovoc/c_1855>, <http://dbpedia.org/resource/Cooperation>, <http://lod.gesis.org/thesoz/concept_10042918>, <https://d-nb.info/gnd/4032386-9> ;
     skos:inScheme <http://zbw.eu/stw> .
 ```
