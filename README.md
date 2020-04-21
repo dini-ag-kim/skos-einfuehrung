@@ -8,7 +8,7 @@ Diese Seite beinhaltet einen theoretischen Überblick. Wer direkt praktisch eins
 
 Grob betrachtet bestehen alle Metadaten aus Elementen und zugehörigen Werten. Beispiel:
 
-```
+```yaml
 title: Beispiel
 creator: Anne
 date: 2020-04-21
@@ -18,14 +18,14 @@ subject: Bauingenieurwesen
 
 Um diese für Menschen gut lesbare Beschreibung konsistent innerhalb eines technischen Systems anzuwenden, wird ein Metadatenschema definiert. Dieses legt fest, welche Elemente es gibt, ob diese verpflichtend oder optional sind und welche Inhaltstypen sie haben dürfen. Ein Schema könnte vereinfacht so aussehen:
 
-```
+```yaml
 mandatory:
-    - title: string
-    - creator: string
+  - title: string
+  - creator: string
 optional:
-    - date: ISO8601
-    - language: ISO639-1
-    - subject: string
+  - date: ISO8601
+  - language: ISO639-1
+  - subject: string
 ```
 
 Hier ist die Datumsangabe nach ISO 8601 (JJJJ-MM-TT) und die Sprachangabe nach ISO 639-1 (2-stellige Sprachkürzel) formatiert. Fehlerhafte Eingaben wie `2020-21-04 ` (Monat und Tag vertauscht) oder `dd` (nicht existentes Sprachkürzel) können bei der Eingabe vom System erkannt und mit einer Fehlermeldung quittiert werden. Im Element `subject` ist jede Zeichenkette (string) erlaubt, d.h. Schreibfehler wie `Bauingeneurwesen` oder ein ähnliches Wort wie `Bautechnik` werden vom System nicht als Problem erkannt.
