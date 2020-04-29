@@ -58,6 +58,8 @@ SKOS wird im graph-basierten Datenmodell [Resource Description Framework](https:
 
 ## Weitere Inhalte dieser Einführung
 
+* [Kodierung](skos-kodierung.md) in RDF/Turtle erklärt am Beispiel des Standard-Thesaurus Wirtschaft
+* [Elemente](skos-elemente.md) von SKOS
 * [Tutorial](skos-tutorial.md) zur Erstellung und Veröffentlichung eines kontrollierten Mini-Vokabulars
 * [Häufig gestellte Fragen](skos-faq.md) (FAQ)
 * [Anwendungsbeispiele](skos-anwendungsbeispiele.md)

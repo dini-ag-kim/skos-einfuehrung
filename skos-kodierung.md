@@ -1,6 +1,6 @@
 # Kodierung
 
-Wie oben erwähnt, wird SKOS im graph-basierten Datenmodell RDF kodiert. Wir verwenden für die Code-Schnipsel im folgenden Beispiel die RDF-Serialisierung [Turtle](https://format.gbv.de/rdf/turtle), weil diese am besten lesbar ist. 
+Wie in der Einleitung erwähnt, wird SKOS im graph-basierten Datenmodell RDF kodiert. Wir verwenden für die Code-Schnipsel im folgenden Beispiel die RDF-Serialisierung [Turtle](https://format.gbv.de/rdf/turtle), weil diese am besten lesbar ist. 
 
 ## RDF/Turtle
 
@@ -127,7 +127,7 @@ Für Links zu externen SKOS-Vokabularen gibt es gleich drei Prädikate, um die G
 
 Die Quellenangabe `(aus DBpedia)` steht nicht explizit in der SKOS-Datei. Wahrscheinlich erfolgt die Darstellung auf der Webseite auch hier wieder über eine Auswertung des Adressbestandteils im Identifier mit Hilfe einer Übersetzungstabelle, also beispielsweise dbpedia.org -> "(aus DBpedia)".
 
-### Technischer Aufbau
+## Technischer Aufbau
 
 Neben den im obigen Beispiel verwendeten Elementen bedarf es noch ein paar allgemeiner Definitionen, um eine valide Datei mit dem SKOS-Vokabular zu erstellen.
 
@@ -160,7 +160,7 @@ Schließlich müssen wie bei RDF üblich müssen die verwendeten Vokabulare einm
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 ```
 
-### Ergebnis
+## Vollständiges Beispiel
 
 Unser obiges Beispiel könnte im Format RDF/Turtle also so aussehen:
 
