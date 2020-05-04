@@ -13,16 +13,17 @@ Um die Erschließung der Dokumente zu vereinheitlichen, soll die Fachsystematik 
 
 Die fiktive Hochschule hat aktuell folgende Studienangebote:
 
-| Fachbereich                                          | Studiengang                                                  | Abschluss |
-| ---------------------------------------------------- | ------------------------------------------------------------ | --------- |
-| Bauwesen (Civil Engineering)                         | Bauingenieur- und Umweltingenieurwesen (Civil and Environmental Engineering) | Bachelor  |
-| Bauwesen (Civil Engineering)                         | Bauingenieurwesen (Civil Engineering)                        | Master    |
-| Bauwesen (Civil Engineering)                         | Wasser- und Umweltingenieurwesen (Water and Environmental Engineering) | Master    |
-| Maschinenbau (Mechanical Engineering)                | Maschinenbau (Mechanical Engineering)                        | Bachelor  |
-| Maschinenbau (Mechanical Engineering)                | Mechatronics (Mechatronics)                                  | Master    |
-| Maschinenbau (Mechanical Engineering)                | Schiffbau und Meerestechnik (Naval Architecture and Ocean Engineering) | Master    |
-| Verfahrenstechnik (Process and Chemical Engineering) | Verfahrenstechnik (Process Engineering)                      | Bachelor  |
-| Verfahrenstechnik (Process and Chemical Engineering) | Bioverfahrenstechnik (Bioprocess Engineering)                | Bachelor  |
+* Fachbereich Bauwesen (Civil Engineering)
+  * Bachelor Bauingenieur- und Umweltingenieurwesen (Civil and Environmental Engineering)
+  * Master Bauingenieurwesen (Civil Engineering)
+  * Master Wasser- und Umweltingenieurwesen (Water and Environmental Engineering)
+* Fachbereich Maschinenbau (Mechanical Engineering)
+  * Bachelor Maschinenbau (Mechanical Engineering)
+  * Master Mechatronics (Mechatronics)
+  * Master Schiffbau und Meerestechnik (Naval Architecture and Ocean Engineering)
+* Fachbereich Verfahrenstechnik (Process and Chemical Engineering)
+  * Bachelor Verfahrenstechnik (Process Engineering)
+  * Bachelor Bioverfahrenstechnik (Bioprocess Engineering)
 
 Die Diplomstudiengänge Bauingenieurwesen und Umwelttechnik, Maschinenbau sowie Verfahrenstechnik wurden mit der Bologna-Reform zum Sommersemester 2014 eingestellt.
 
