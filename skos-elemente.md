@@ -104,19 +104,19 @@ Zusammenfassend eine Übersicht über alle in SKOS verwendeten Elemente:
 <http://zbw.eu/stw/descriptor/10923-2> a skos:Concept ;
     skos:prefLabel "Kartell"@de .
 
-_b:0 a skos:Collection ;
+_:dont-be-evil-fails a skos:Collection ;
     skos:prefLabel "Sammlung rechtmäßiger Unternehmenskooperation"@de ;
     skos:member <http://zbw.eu/stw/descriptor/12668-3> ;
     skos:member <http://zbw.eu/stw/descriptor/10897-5> .
 
-_b:0 a skos:OrderedCollection ;
+_:b0 a skos:OrderedCollection ;
     skos:prefLabel "Unternehmenszusammenschlüsse sortiert nach Intensität"@de ;
     skos:memberList _:b1 .
-_b1 rdf:first <http://zbw.eu/stw/descriptor/10897-5> ;
+_:b1 rdf:first <http://zbw.eu/stw/descriptor/10897-5> ;
     rdf:rest _:b2 .
-_b2 rdf:first <http://zbw.eu/stw/descriptor/10923-2> ;
+_:b2 rdf:first <http://zbw.eu/stw/descriptor/10923-2> ;
     rdf:rest _:b3 .
-_b3 rdf:first <http://zbw.eu/stw/descriptor/12668-3> ;
+_:b3 rdf:first <http://zbw.eu/stw/descriptor/12668-3> ;
     rdf:rest rdf:nil .
 ```
 
