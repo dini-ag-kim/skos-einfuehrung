@@ -3,7 +3,7 @@
 In diesem Tutorial erstellen und veröffentlichen wir ein eigenes fiktives SKOS-Vokabular. Versetzen Sie sich dazu gedanklich in folgendes Szenario:
 
 * Eine kleine Hochschule betreibt einen Dokumentenserver für Abschlussarbeiten.
-* Auf der Webseite des Dokumentenservers sollen Nutzer\*innen nach Fachbereichen und Studiengängen filtern können.
+* Auf der Webseite sollen Nutzer\*innen nach Fachbereichen und Studiengängen filtern können.
 * Der Dokumentenserver wird in zwei Sprachen (deutsch und englisch) angeboten.
 * Zu statistischen Zwecken werden die Studiengänge der DESTATIS Hochschulfächersystematik zugeordnet.
 
@@ -29,7 +29,7 @@ Die Diplomstudiengänge Bauingenieurwesen und Umwelttechnik, Maschinenbau sowie 
 
 ## Erstellung
 
-Wir erstellen unser SKOS-Vokabular in Turtle-Syntax. Lesen Sie dazu den [Abschnitt RDF/Turtle auf der Seite Kodierung](skos-kodierung.md).
+Wir erstellen unser SKOS-Vokabular in Turtle-Syntax. Lesen Sie dazu [RDF/Turtle auf der Seite Kodierung](skos-kodierung.md).
 
 Öffnen Sie dann zum Schreiben den [Turtle Web Editor](https://felixlohmeier.github.io/turtle-web-editor/) oder einen anderen Texteditor ihrer Wahl.
 
@@ -155,8 +155,6 @@ Auf der Seite [Elemente](skos-elemente.md) finden Sie eine vollständige Liste a
 
 ## Validierung
 
-### Beispiel
-
 Ein mögliches Ergebnis der Aufgaben im obigen Tutorial könnte wie folgt aussehen:
 
 ```turtle
@@ -212,6 +210,7 @@ Ein mögliches Ergebnis der Aufgaben im obigen Tutorial könnte wie folgt ausseh
 <studiengang/maschinenbau> a skos:Concept ;
   skos:prefLabel "Maschinenbau (Bachelor)"@de, "Mechanical Engineering (Bachelor)"@en ;
   skos:broader <fachbereich/maschinenbau> ;
+  skos:historyNote "Gleichnamiger Diplomstudiengang zum Sommersemester 2014 eingestellt." ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n104> ;
   skos:inScheme <scheme> .
 
@@ -230,6 +229,7 @@ Ein mögliches Ergebnis der Aufgaben im obigen Tutorial könnte wie folgt ausseh
 <studiengang/verfahrenstechnik> a skos:Concept ;
   skos:prefLabel "Verfahrenstechnik (Bachelor)"@de, "Process Engineering (Bachelor)"@en ;
   skos:broader <fachbereich/verfahrenstechnik> ;
+  skos:historyNote "Gleichnamiger Diplomstudiengang zum Sommersemester 2014 eingestellt." ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n226> ;
   skos:inScheme <scheme> .
 
@@ -253,19 +253,13 @@ Weil Bauwesen sowohl der Name eines Fachbereichs als auch eines Studiengangs ist
 
 Optimierte SKOS-Vokabulare enthalten direkte beidseitige Verknüpfungen, um die maschinelle Nutzung zu beschleunigen. So müsste bei der folgenden Validierung unter anderem auffallen, dass wir zwar die Begriffe auf der obersten Ebene mit `skos:topConceptOf` dem Schema zugeordnet haben. Das Gegenstück `skos:hasTopConcept` fehlt aber noch im Schema.
 
-### Skosify
+Skosify: http://demo.seco.tkk.fi/skosify/skosify
 
-http://demo.seco.tkk.fi/skosify/skosify
-
-### SKOS testing tool
-
-http://labs.sparna.fr/skos-testing-tool/
+SKOS testing tool: http://labs.sparna.fr/skos-testing-tool/
 
 ## Visualisierung
 
-mit SKOS Play...
-
-http://labs.sparna.fr/skos-play/
+mit SKOS Play... http://labs.sparna.fr/skos-play/
 
 ## Veröffentlichung
 
