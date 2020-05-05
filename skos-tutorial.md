@@ -54,6 +54,7 @@ Danach definieren wir mit `skos:ConceptScheme` unser Vokabular. Für die Beschre
 
 ```turtle
 <scheme> a skos:ConceptScheme ;
+  skos:prefLabel "Fachsystematik Hochschule ..."@de ;
   dct:title "Fachsystematik Hochschule ..."@de ;
   dct:description "Fachbereiche und Studiengänge für den Dokumentenserver"@de .
 ```
@@ -164,6 +165,7 @@ Ein mögliches Ergebnis der Aufgaben im obigen Tutorial könnte wie folgt ausseh
 @prefix dct: <http://purl.org/dc/terms/> .
 
 <scheme> a skos:ConceptScheme ;
+  skos:prefLabel "Fachsystematik Hochschule ..."@de ;
   dct:title "Fachsystematik Hochschule ..."@de ;
   dct:issued "2020-05-04" ;
   dct:description "Fachbereiche und Studiengänge für den Dokumentenserver"@de .
@@ -188,21 +190,21 @@ Ein mögliches Ergebnis der Aufgaben im obigen Tutorial könnte wie folgt ausseh
 
 <studiengang/bauingenieurwesen-umweltingenieurwesen> a skos:Concept ;
   skos:prefLabel "Bauingenieur- und Umweltingenieurwesen (Bachelor)"@de, "Civil and Environmental Engineering (Bachelor)"@en ;
-  skos:broader <fachbereich/bauingenieurwesen> ;
+  skos:broader <fachbereich/bauwesen> ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n017> ;
   skos:closeMatch <https://w3id.org/kim/hochschulfaechersystematik/n457> ;
   skos:inScheme <scheme> .
 
 <studiengang/bauingenieurwesen> a skos:Concept ;
   skos:prefLabel "Bauingenieurwesen (Master)"@de, "Civil Engineering (Master)"@en ;
-  skos:broader <fachbereich/bauingenieurwesen> ;
+  skos:broader <fachbereich/bauwesen> ;
   skos:historyNote "Gleichnamiger Diplomstudiengang zum Sommersemester 2014 eingestellt." ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n017> ;
   skos:inScheme <scheme> .
 
 <studiengang/wasserwesen-umweltingenieurwesen> a skos:Concept ;
   skos:prefLabel "Wasser- und Umweltingenieurwesen (Master)"@de, "Water and Environmental Engineering (Master)"@en ;
-  skos:broader <fachbereich/bauingenieurwesen> ;
+  skos:broader <fachbereich/bauwesen> ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n094> ;
   skos:closeMatch <https://w3id.org/kim/hochschulfaechersystematik/n457> ;
   skos:inScheme <scheme> .
@@ -249,7 +251,7 @@ Ein mögliches Ergebnis der Aufgaben im obigen Tutorial könnte wie folgt ausseh
   skos:member <studiengang/bauingenieurwesen>, <studiengang/wasserwesen-umweltingenieurwesen>, <studiengang/mechatronics>, <studiengang/schiffbau-meerestechnik> .
 ```
 
-Weil Bauwesen sowohl der Name eines Fachbereichs als auch eines Studiengangs ist, wurden hier bei den Identifiern Präfixe verwendet (`fachbereich/` bzw. `/studiengang/`).
+Weil Bauwesen sowohl der Name eines Fachbereichs als auch eines Studiengangs ist, wurden hier bei den Identifiern Präfixe verwendet (`fachbereich/` bzw. `studiengang/`).
 
 Optimierte SKOS-Vokabulare enthalten direkte beidseitige Verknüpfungen, um die maschinelle Nutzung zu beschleunigen. So müsste bei der folgenden Validierung unter anderem auffallen, dass wir zwar die Begriffe auf der obersten Ebene mit `skos:topConceptOf` dem Schema zugeordnet haben. Das Gegenstück `skos:hasTopConcept` fehlt aber noch im Schema.
 
