@@ -251,24 +251,62 @@ Ein mögliches Ergebnis der Aufgaben im obigen Tutorial könnte wie folgt ausseh
   skos:member <studiengang/bauingenieurwesen>, <studiengang/wasserwesen-umweltingenieurwesen>, <studiengang/mechatronics>, <studiengang/schiffbau-meerestechnik> .
 ```
 
+Diese Lösung als Datei-Download: [skos-tutorial.ttl](https://dini-ag-kim.github.io/skos-einfuehrung/examples/skos-tutorial.ttl)
+
 Weil Bauwesen sowohl der Name eines Fachbereichs als auch eines Studiengangs ist, wurden hier bei den Identifiern Präfixe verwendet (`fachbereich/` bzw. `studiengang/`).
 
-Optimierte SKOS-Vokabulare enthalten direkte beidseitige Verknüpfungen, um die maschinelle Nutzung zu beschleunigen. So müsste bei der folgenden Validierung unter anderem auffallen, dass wir zwar die Begriffe auf der obersten Ebene mit `skos:topConceptOf` dem Schema zugeordnet haben. Das Gegenstück `skos:hasTopConcept` fehlt aber noch im Schema.
+Laden Sie Ihre Lösung oder die obige Datei in das [SKOS testing tool](http://labs.sparna.fr/skos-testing-tool/) und prüfen Sie die Ergebnisse. Hier einige Erläuterungen zu den Warnungen:
 
-Skosify: http://demo.seco.tkk.fi/skosify/skosify
+* "dcc - Disconnected Concept Clusters": Hier bildet ein Algorithmus Cluster und analysiert welche nur schwach mit dem Rest des Vokabulars verbunden sind.
 
-SKOS testing tool: http://labs.sparna.fr/skos-testing-tool/
+* "oilt - Omitted or Invalid Language Tags": Bei einigen Bezeichnungen wurde in der Beispiellösung keine Sprache definiert (zum Beispiel mit `""@de`).
+
+* "uc - Undocumented Concepts": Lediglich bei drei Studiengängen ist in der Beispiellösung eine Notiz definiert (hier `skos:historyNote`). Diese Prüfung listet alle Begriffe auf, bei denen keines der [Elemente zur Dokumentation](skos-elemente.md#dokumentation) verwendet wurde.
+
+* "urc - Unidirectionally Related Concepts": Optimierte SKOS-Vokabulare enthalten direkte beidseitige Verknüpfungen, um die maschinelle Nutzung zu beschleunigen. So sind in der Beispiellösung zwar die Begriffe auf der obersten Ebene mit `skos:topConceptOf` dem Schema zugeordnet. Das Gegenstück `skos:hasTopConcept` fehlt aber im Schema. Die Definition des Vokabulars müsste also noch wie folgt ergänzt werden:
+
+  ```turtle
+  <scheme> skos:hasTopConcept <fachbereich/bauwesen>, <fachbereich/maschinenbau>, <fachbereich/verfahrenstechnik> .
+  ```
+
+Ein weiteres interessantes Tool zur Validierung und Optimierung ist [Skosify](http://demo.seco.tkk.fi/skosify/skosify). Es ermöglicht die automatische Ableitung von Relationen und strukturiert die Syntax neu.
 
 ## Visualisierung
 
-mit SKOS Play... http://labs.sparna.fr/skos-play/
+Das Tool [SKOS Play !](http://labs.sparna.fr/skos-play/upload) zeigt einige Visualisierungen und Tools, die aus einem fertigen SKOS-Vokabular recht mühelos abgeleitet werden können.
+
+Laden Sie Ihre Lösung oder die [obige Datei](https://dini-ag-kim.github.io/skos-einfuehrung/examples/skos-tutorial.ttl) in das Tool und schauen Sie sich verschiedene Visualisierungen an.
+
+**Hierarchical Tree:**
+
+![](images/skos-play-hierarchical-tree.png)
+
+**Language Correspondence:**
+
+![](images/skos-play-language-correspondence.png)
+
+**Partition Layout:**
+
+![](images/skos-play-partition-layout.png)
+
+**Autocompletion:**
+
+![](images/skos-play-autocompletion.png)
 
 ## Veröffentlichung
 
-Für die Bereitstellung im Web wird eine spezialisierte Software benötigt...
+Sofern keine [spezialisierte Software](skos-software.md) für die Redaktionsarbeit verwendet wird, bietet es sich an, die Turtle-Datei (.ttl) in einem git repository (GitHub/GitLab) abzulegen, weil die integrierte Änderungshistorie die redaktionellen Bearbeitungen besser nachvollziehbar macht.
 
-ausgehend aus der Turtle-Datei...
+Zusätzlich gibt es Tools, welche das SKOS-Vokabular für Menschen grafisch und für Maschinen strukturiert aufbereiten und auch weitergehende Möglichkeiten wie eine Suchfunktion anbieten:
 
-mit Skosmos... http://skosmos.org
+* Im Tutorial oben haben wir bereits die Präsentation der [Hochschulfächersystematik bei SkoHub](https://w3id.org/kim/hochschulfaechersystematik/scheme) genutzt. Eigene SKOS-Vokabulare können ebenfalls bei SkoHub Vocabs veröffentlicht werden ohne einen eigenen Webserver zu betreiben. Das Vorgehen ist im Blogpost [Presenting the SkoHub Vocabs Prototype](http://blog.lobid.org/2019/09/27/presenting-skohub-vocabs.html) beschrieben.
 
-mit SkoHub Vocabs... https://skohub.io
+* Eine weitere beliebte Software zur Präsentation ist [Skosmos](http://skosmos.org). Es gibt zwar eine [Demo-Installation](http://skosmos.dev.finto.fi/en/), aber wer eigene Vokabulare veröffentlichen möchte, müsste die PHP-Software auf einem eigenen Webserver installieren.
+
+In jedem Fall bietet es sich an, einen Permalink-Dienst wie [w3id.org](https://w3id.org/) zu nutzen, um die Software oder den Server später einfach wechseln zu können. Im Tutorial haben wir eingangs die Basis-URL auf http://www.example.org gesetzt. Im Prinzip reicht es aus, diese URL anzupassen. Beispiel Hochschulfächersystematik:
+
+```turtle
+@base <https://w3id.org/kim/hochschulfaechersystematik/> .
+```
+
+Wenn das Vokabular zur Nachnutzung geeignet ist, sollte es auch im [Basel Register of Thesauri, Ontologies & Classifications](https://www.bartoc.org/) (BARTOC) verzeichnet werden.

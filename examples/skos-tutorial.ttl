@@ -1,0 +1,90 @@
+@base <http://www.example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<scheme> a skos:ConceptScheme ;
+  skos:prefLabel "Fachsystematik Hochschule ..."@de ;
+  dct:title "Fachsystematik Hochschule ..."@de ;
+  dct:issued "2020-05-04" ;
+  dct:description "Fachbereiche und Studiengänge für den Dokumentenserver"@de .
+
+<fachbereich/bauwesen> a skos:Concept ;
+  skos:prefLabel "Bauwesen"@de, "Civil Engineering"@en ;
+  skos:narrower <studiengang/bauingenieurwesen>, <studiengang/bauingenieurwesen-umweltingenieurwesen>, <studiengang/wasserwesen-umweltingenieurwesen> ;
+  skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n68> ;
+  skos:topConceptOf <scheme> .
+
+<fachbereich/maschinenbau> a skos:Concept ;
+  skos:prefLabel "Maschinenbau"@de, "Mechanical Engineering"@en ;
+  skos:narrower <studiengang/maschinenbau>, <studiengang/mechatronics>, <studiengang/schiffbau-meerestechnik> ;
+  skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n63> ;
+  skos:topConceptOf <scheme> .
+
+<fachbereich/verfahrenstechnik> a skos:Concept ;
+  skos:prefLabel "Verfahrenstechnik"@de, "Process and Chemical Engineering"@en ;
+  skos:narrower <studiengang/verfahrenstechnik>, <studiengang/bioverfahrenstechnik> ;
+  skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n63> ;
+  skos:topConceptOf <scheme> .
+
+<studiengang/bauingenieurwesen-umweltingenieurwesen> a skos:Concept ;
+  skos:prefLabel "Bauingenieur- und Umweltingenieurwesen (Bachelor)"@de, "Civil and Environmental Engineering (Bachelor)"@en ;
+  skos:broader <fachbereich/bauwesen> ;
+  skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n017> ;
+  skos:closeMatch <https://w3id.org/kim/hochschulfaechersystematik/n457> ;
+  skos:inScheme <scheme> .
+
+<studiengang/bauingenieurwesen> a skos:Concept ;
+  skos:prefLabel "Bauingenieurwesen (Master)"@de, "Civil Engineering (Master)"@en ;
+  skos:broader <fachbereich/bauwesen> ;
+  skos:historyNote "Gleichnamiger Diplomstudiengang zum Sommersemester 2014 eingestellt." ;
+  skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n017> ;
+  skos:inScheme <scheme> .
+
+<studiengang/wasserwesen-umweltingenieurwesen> a skos:Concept ;
+  skos:prefLabel "Wasser- und Umweltingenieurwesen (Master)"@de, "Water and Environmental Engineering (Master)"@en ;
+  skos:broader <fachbereich/bauwesen> ;
+  skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n094> ;
+  skos:closeMatch <https://w3id.org/kim/hochschulfaechersystematik/n457> ;
+  skos:inScheme <scheme> .
+
+<studiengang/maschinenbau> a skos:Concept ;
+  skos:prefLabel "Maschinenbau (Bachelor)"@de, "Mechanical Engineering (Bachelor)"@en ;
+  skos:broader <fachbereich/maschinenbau> ;
+  skos:historyNote "Gleichnamiger Diplomstudiengang zum Sommersemester 2014 eingestellt." ;
+  skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n104> ;
+  skos:inScheme <scheme> .
+
+<studiengang/mechatronics> a skos:Concept ;
+  skos:prefLabel "Mechatronics (Master)"@de, "Mechatronics (Master)"@en ;
+  skos:broader <fachbereich/maschinenbau> ;
+  skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n104> ;
+  skos:inScheme <scheme> .
+
+<studiengang/schiffbau-meerestechnik> a skos:Concept ;
+  skos:prefLabel "Schiffbau und Meerestechnik (Master)"@de, "Naval Architecture and Ocean Engineering (Master)"@en ;
+  skos:broader <fachbereich/maschinenbau> ;
+  skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n142> ;
+  skos:inScheme <scheme> .
+
+<studiengang/verfahrenstechnik> a skos:Concept ;
+  skos:prefLabel "Verfahrenstechnik (Bachelor)"@de, "Process Engineering (Bachelor)"@en ;
+  skos:broader <fachbereich/verfahrenstechnik> ;
+  skos:historyNote "Gleichnamiger Diplomstudiengang zum Sommersemester 2014 eingestellt." ;
+  skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n226> ;
+  skos:inScheme <scheme> .
+
+<studiengang/bioverfahrenstechnik> a skos:Concept ;
+  skos:prefLabel "Bioverfahrenstechnik (Bachelor)"@de, "Bioprocess Engineering (Bachelor)"@en ;
+  skos:broader <fachbereich/verfahrenstechnik> ;
+  skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n226> ;
+  skos:closeMatch <https://w3id.org/kim/hochschulfaechersystematik/n282> ;
+  skos:inScheme <scheme> .
+
+<bachelor> a skos:Collection ;
+  skos:prefLabel "Bachelor" ;
+  skos:member <studiengang/bauingenieurwesen-umweltingenieurwesen>, <studiengang/maschinenbau>, <studiengang/verfahrenstechnik>, <studiengang/bioverfahrenstechnik> .
+
+<master> a skos:Collection ;
+  skos:prefLabel "Master" ;
+  skos:member <studiengang/bauingenieurwesen>, <studiengang/wasserwesen-umweltingenieurwesen>, <studiengang/mechatronics>, <studiengang/schiffbau-meerestechnik> .
