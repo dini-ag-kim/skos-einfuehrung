@@ -16,7 +16,7 @@ language: de
 subject: Bauingenieurwesen
 ```
 
-Um diese für Menschen gut lesbare Beschreibung konsistent innerhalb eines technischen Systems anzuwenden, wird ein Metadatenschema definiert. Dieses legt fest, welche Elemente es gibt, ob diese verpflichtend oder optional sind und welche Inhaltstypen sie haben dürfen. Ein Schema könnte vereinfacht so aussehen:
+Um diese für Menschen gut lesbare Beschreibung konsistent innerhalb eines technischen Systems abzubilden, wird ein Metadatenschema definiert. Dieses legt fest, welche Elemente es gibt, ob diese verpflichtend oder optional sind und welche Inhaltstypen sie haben dürfen. Ein Schema könnte vereinfacht so aussehen:
 
 ```yaml
 mandatory:
@@ -38,8 +38,8 @@ Durch die begriffliche Kontrolle werden Schreibfehler, Bedeutungs- und Bezeichnu
 
 Simple Knowledge Organization System (SKOS) ist eine Beschreibungssprache für kontrollierte Vokabulare (Thesauri, Klassifikationen, Taxonomien usw.). Ziel des Standards ist die einfache Veröffentlichung und Nutzung von kontrollierten Vokabularen als [Linked Open Data](https://de.wikipedia.org/wiki/Linked_Open_Data). SKOS wurde 2009 [vom W3C als Empfehlung verabschiedet](https://www.w3.org/TR/2009/REC-skos-reference-20090818/) und findet seitdem zunehmende Verbreitung als Austauschformat:
 
-* Bedeutende allgemeine kontrollierte Vokabulare (z.B. Thesaurus der UNESCO oder der EU) und zahlreiche Fachspezifische (z.B. Standard-Thesaurus Wirtschaft der ZBW oder Thesaurus Sozialwissenschaften von GESIS) wurden bereits als SKOS veröffentlicht (vgl. [Anwendungsbeispiele](skos-anwendungsbeispiele.md)).
-* Die meisten aktuellen Thesaurus-Management-Systeme unterstützen SKOS. Es gibt außerdem zahlreiche Tools, welche die Veröffentlichung und Nutzung von Vokabularen als SKOS vereinfacht  (vgl. [Software](skos-software.md)).
+* Bedeutende allgemeine kontrollierte Vokabulare (z.B. Thesaurus der UNESCO oder der EU) und zahlreiche fachspezifische (z.B. Standard-Thesaurus Wirtschaft der ZBW oder Thesaurus Sozialwissenschaften von GESIS) wurden bereits als SKOS veröffentlicht (vgl. [Anwendungsbeispiele](skos-anwendungsbeispiele.md)).
+* Die meisten aktuellen Thesaurus-Management-Systeme unterstützen SKOS. Es gibt außerdem zahlreiche Tools, welche die Veröffentlichung und Nutzung von Vokabularen als SKOS vereinfachen  (vgl. [Software](skos-software.md)).
 
 SKOS wird im graph-basierten Datenmodell [Resource Description Framework](https://de.wikipedia.org/wiki/Resource_Description_Framework) (RDF) kodiert. Durch diese Form der Kodierung ist das Vokabular maschinenlesbar und web-kompatibel. SKOS unterstützt Mehrsprachigkeit, jeder Begriff erhält einen Identifier (URI) und Verknüpfungen mit externen Vokabularen im Web sind möglich. Als Datenformate stehen die Serialisierungen zur Verfügung, die auch RDF bietet, also [RDF/XML](RDF/XML), [N-Triples](https://format.gbv.de/rdf/ntriples), [Turtle](https://format.gbv.de/rdf/turtle), [JSON-LD](https://format.gbv.de/rdf/json-ld) und weitere.
 
