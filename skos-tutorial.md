@@ -130,7 +130,7 @@ Nehmen wir an, dass in unserem Vokabular systematisch zwischen Bachelor und Mast
 skos:prefLabel "Bauingenieurwesen (Master)"@de
 ```
 
-... aber für eine Suchoberfläche ist es einfacher auszuwerten, wenn es strukturiert definiert wird. SKOS bietet mit `skos:Collection` und `skos:OrederedCollection` die Möglichkeit, Sammlungen zu definieren. Diese werden eher selten verwendet und zwar meist dann wenn die Sammlung nicht selbst ein Begriff im Vokabular sein darf und eine zusätzliche Kategorisierungsebene benötigt wird.
+... aber für eine Suchoberfläche ist es einfacher auszuwerten, wenn es strukturiert definiert wird. SKOS bietet mit `skos:Collection` und `skos:OrderedCollection` die Möglichkeit, Sammlungen zu definieren. Diese werden eher selten verwendet und zwar meist dann wenn die Sammlung nicht selbst ein Begriff im Vokabular sein darf und eine zusätzliche Kategorisierungsebene benötigt wird.
 
 Beispiel:
 
@@ -152,7 +152,7 @@ Nehmen wir an, dass wir den Begriff `<bauingenieurwesen>` früher für den Diplo
 <bauingenieurwesen> skos:historyNote "Gleichnamiger Diplomstudiengang zum Sommersemester 2014 eingestellt." .
 ```
 
-Auf der Seite [Elemente](skos-elemente.md) finden Sie eine vollständige Liste aller in SKOS verfügbaren Elemente mit kurzen Erläuterungen udn Beispielen.
+Auf der Seite [Elemente](skos-elemente.md) finden Sie eine vollständige Liste aller in SKOS verfügbaren Elemente mit kurzen Erläuterungen und Beispielen.
 
 ## Validierung
 
@@ -301,7 +301,7 @@ Zusätzlich gibt es Tools, welche das SKOS-Vokabular für Menschen grafisch und 
 
 * Im Tutorial oben haben wir bereits die Präsentation der [Hochschulfächersystematik bei SkoHub](https://w3id.org/kim/hochschulfaechersystematik/scheme) genutzt. Eigene SKOS-Vokabulare können ebenfalls bei SkoHub Vocabs veröffentlicht werden ohne einen eigenen Webserver zu betreiben. Das Vorgehen ist im Blogpost [Presenting the SkoHub Vocabs Prototype](http://blog.lobid.org/2019/09/27/presenting-skohub-vocabs.html) beschrieben.
 
-* Eine weitere beliebte Software zur Präsentation ist [Skosmos](http://skosmos.org). Es gibt zwar eine [Demo-Installation](http://skosmos.dev.finto.fi/en/), aber wer eigene Vokabulare veröffentlichen möchte, müsste die PHP-Software auf einem eigenen Webserver installieren.
+* Eine weitere beliebte Software zur Präsentation ist [Skosmos](http://skosmos.org). Es gibt zwar eine [Demo-Installation](http://skosmos.dev.finto.fi/en/), aber wer eigene Vokabulare veröffentlichen möchte, muss die PHP-Software auf einem eigenen Webserver installieren.
 
 In jedem Fall bietet es sich an, einen Permalink-Dienst wie [w3id.org](https://w3id.org/) zu nutzen, um die Software oder den Server später einfach wechseln zu können. Im Tutorial haben wir eingangs die Basis-URL auf http://www.example.org gesetzt. Im Prinzip reicht es aus, diese URL anzupassen. Beispiel Hochschulfächersystematik:
 

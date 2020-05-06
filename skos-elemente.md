@@ -8,7 +8,7 @@ Zusammenfassend eine Übersicht über alle in SKOS verwendeten Elemente:
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [skos:Concept](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#concepts) | Basisklasse für die Begriffe                                 |
 | [skos:ConceptScheme](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes) | Basisklasse für das Vokabular                                |
-| [skos:hasTopConcept](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes) | dieses Vokabular (ConceptScheme) enthält folgende Begriffe auf der obersten Ebene ... |
+| [skos:hasTopConcept](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes) | dieses Vokabular (skos:ConceptScheme) enthält folgende Begriffe auf der obersten Ebene ... |
 | [skos:inScheme](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes) | dieser Begriff gehört zu folgendem Schema ... ; muss für alle Begriffe im Schema gesetzt werden außer für diejenigen, bei denen skos:topConceptOf verwendet wird |
 | [skos:topConceptOf](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes) | dieser Begriff gehört zur obersten Ebene des folgenden Schemas ... |
 
