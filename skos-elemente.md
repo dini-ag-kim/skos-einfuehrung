@@ -48,9 +48,9 @@ Zusammenfassend eine Übersicht über alle in SKOS verwendeten Elemente:
 
 | Element                                                      | Beschreibung                                                 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [skos:changeNote](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes) | Notiz für Bearbeiter*innen des Vokabulars zu kürzlich erfolgten Änderungen |
+| [skos:changeNote](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes) | Notiz für Bearbeiter/innen des Vokabulars zu kürzlich erfolgten Änderungen |
 | [skos:definition](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes) | Kurzdefinition des Begriffs                                  |
-| [skos:editorialNote](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes) | Notiz für Bearbeiter*innen des Vokabulars                    |
+| [skos:editorialNote](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes) | Notiz für Bearbeiter/innen des Vokabulars                    |
 | [skos:example](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes) | Beispiel für die Verwendung des Begriffs                     |
 | [skos:historyNote](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes) | historische Änderungen in der Bedeutung des Begriffs         |
 | [skos:note](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes) | allgemeine Notiz                                             |

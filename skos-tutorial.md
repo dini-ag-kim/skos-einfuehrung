@@ -3,7 +3,7 @@
 In diesem Tutorial erstellen und veröffentlichen wir ein eigenes fiktives SKOS-Vokabular. Versetzen Sie sich dazu gedanklich in folgendes Szenario:
 
 * Eine kleine Hochschule betreibt einen Dokumentenserver für Abschlussarbeiten.
-* Auf der Webseite sollen Nutzer\*innen nach Fachbereichen und Studiengängen filtern können.
+* Auf der Webseite sollen Nutzer/innen nach Fachbereichen und Studiengängen filtern können.
 * Der Dokumentenserver wird in zwei Sprachen (deutsch und englisch) angeboten.
 * Zu statistischen Zwecken werden die Studiengänge der DESTATIS Hochschulfächersystematik zugeordnet.
 
@@ -144,7 +144,7 @@ Ergänzen Sie eine Sammlung aller Bachelor-Studiengänge und eine Sammlung aller
 
 ### 7. Dokumentation
 
-Um den Nutzer\*innen des Vokabulars die Erschließung zu erleichtern oder um als Bearbeiter\*in des Vokabulars eine Gedächtnisstütze zu hinterlegen bietet SKOS zahlreiche Elemente für Notizen und Erläuterungen.
+Um den Nutzer/innen des Vokabulars die Erschließung zu erleichtern oder um als Bearbeiter/in des Vokabulars eine Gedächtnisstütze zu hinterlegen bietet SKOS zahlreiche Elemente für Notizen und Erläuterungen.
 
 Nehmen wir an, dass wir den Begriff `<bauingenieurwesen>` früher für den Diplomstudiengang verwendet hatten. Dann könnten wir dies wie folgt dokumentieren:
 
