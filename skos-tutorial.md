@@ -53,7 +53,7 @@ Wie bei RDF üblich müssen zu Beginn der Datei die verwendeten Vokabulare einma
 Danach definieren wir mit `skos:ConceptScheme` unser Vokabular. Für die Beschreibung des Vokabulars werden in der Regel [DCMI Metadata Terms](https://lov.linkeddata.es/dataset/lov/vocabs/dcterms) (dcterms) verwendet.
 
 ```turtle
-<scheme> a skos:ConceptScheme ;
+<> a skos:ConceptScheme ;
   skos:prefLabel "Fachsystematik Hochschule ..."@de ;
   dct:title "Fachsystematik Hochschule ..."@de ;
   dct:description "Fachbereiche und Studiengänge für den Dokumentenserver"@de .
@@ -68,7 +68,7 @@ Als ersten Begriff `skos:Concept` definieren wir einen der Fachbereiche. Diese s
 ```turtle
 <bauwesen> a skos:Concept ;
   skos:prefLabel "Bauwesen"@de, "Civil Engineering"@en ;
-  skos:topConceptOf <scheme> .
+  skos:topConceptOf <> .
 ```
 
 Der präferierte Text für die Anzeige wird mit `skos:prefLabel` festgelegt. Durch die Tags `@de` bzw. `@en` wird die Mehrsprachigkeit definiert.
@@ -78,7 +78,7 @@ Als zweiten Begriff definieren wir einen der Studiengänge. Wenn der Begriff nic
 ```turtle
 <bauingenieurwesen> a skos:Concept ;
   skos:prefLabel "Bauingenieurwesen (Master)"@de, "Civil Engineering (Master)"@en ;
-  skos:inScheme <scheme> .
+  skos:inScheme <> .
 ```
 
 Ergänzen Sie die weiteren Begriffe aus den obigen Beispieldaten.
@@ -105,7 +105,7 @@ Ergänzen Sie in allen Begriffen die hierarchischen Relationen. Beispiel:
 <bauwesen> a skos:Concept ;
   skos:prefLabel "Bauwesen"@de, "Civil Engineering"@en ;
   skos:narrower <bauingenieurwesen> ;
-  skos:topConceptOf <scheme> .
+  skos:topConceptOf <> .
 ```
 
 ### 5. Externe Links
@@ -164,7 +164,7 @@ Ein mögliches Ergebnis der Aufgaben im obigen Tutorial könnte wie folgt ausseh
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
-<scheme> a skos:ConceptScheme ;
+<> a skos:ConceptScheme ;
   skos:prefLabel "Fachsystematik Hochschule ..."@de ;
   dct:title "Fachsystematik Hochschule ..."@de ;
   dct:issued "2020-05-04" ;
@@ -174,73 +174,73 @@ Ein mögliches Ergebnis der Aufgaben im obigen Tutorial könnte wie folgt ausseh
   skos:prefLabel "Bauwesen"@de, "Civil Engineering"@en ;
   skos:narrower <studiengang/bauingenieurwesen>, <studiengang/bauingenieurwesen-umweltingenieurwesen>, <studiengang/wasserwesen-umweltingenieurwesen> ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n68> ;
-  skos:topConceptOf <scheme> .
+  skos:topConceptOf <> .
 
 <fachbereich/maschinenbau> a skos:Concept ;
   skos:prefLabel "Maschinenbau"@de, "Mechanical Engineering"@en ;
   skos:narrower <studiengang/maschinenbau>, <studiengang/mechatronics>, <studiengang/schiffbau-meerestechnik> ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n63> ;
-  skos:topConceptOf <scheme> .
+  skos:topConceptOf <> .
 
 <fachbereich/verfahrenstechnik> a skos:Concept ;
   skos:prefLabel "Verfahrenstechnik"@de, "Process and Chemical Engineering"@en ;
   skos:narrower <studiengang/verfahrenstechnik>, <studiengang/bioverfahrenstechnik> ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n63> ;
-  skos:topConceptOf <scheme> .
+  skos:topConceptOf <> .
 
 <studiengang/bauingenieurwesen-umweltingenieurwesen> a skos:Concept ;
   skos:prefLabel "Bauingenieur- und Umweltingenieurwesen (Bachelor)"@de, "Civil and Environmental Engineering (Bachelor)"@en ;
   skos:broader <fachbereich/bauwesen> ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n017> ;
   skos:closeMatch <https://w3id.org/kim/hochschulfaechersystematik/n457> ;
-  skos:inScheme <scheme> .
+  skos:inScheme <> .
 
 <studiengang/bauingenieurwesen> a skos:Concept ;
   skos:prefLabel "Bauingenieurwesen (Master)"@de, "Civil Engineering (Master)"@en ;
   skos:broader <fachbereich/bauwesen> ;
   skos:historyNote "Gleichnamiger Diplomstudiengang zum Sommersemester 2014 eingestellt." ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n017> ;
-  skos:inScheme <scheme> .
+  skos:inScheme <> .
 
 <studiengang/wasserwesen-umweltingenieurwesen> a skos:Concept ;
   skos:prefLabel "Wasser- und Umweltingenieurwesen (Master)"@de, "Water and Environmental Engineering (Master)"@en ;
   skos:broader <fachbereich/bauwesen> ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n094> ;
   skos:closeMatch <https://w3id.org/kim/hochschulfaechersystematik/n457> ;
-  skos:inScheme <scheme> .
+  skos:inScheme <> .
 
 <studiengang/maschinenbau> a skos:Concept ;
   skos:prefLabel "Maschinenbau (Bachelor)"@de, "Mechanical Engineering (Bachelor)"@en ;
   skos:broader <fachbereich/maschinenbau> ;
   skos:historyNote "Gleichnamiger Diplomstudiengang zum Sommersemester 2014 eingestellt." ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n104> ;
-  skos:inScheme <scheme> .
+  skos:inScheme <> .
 
 <studiengang/mechatronics> a skos:Concept ;
   skos:prefLabel "Mechatronics (Master)"@de, "Mechatronics (Master)"@en ;
   skos:broader <fachbereich/maschinenbau> ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n104> ;
-  skos:inScheme <scheme> .
+  skos:inScheme <> .
 
 <studiengang/schiffbau-meerestechnik> a skos:Concept ;
   skos:prefLabel "Schiffbau und Meerestechnik (Master)"@de, "Naval Architecture and Ocean Engineering (Master)"@en ;
   skos:broader <fachbereich/maschinenbau> ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n142> ;
-  skos:inScheme <scheme> .
+  skos:inScheme <> .
 
 <studiengang/verfahrenstechnik> a skos:Concept ;
   skos:prefLabel "Verfahrenstechnik (Bachelor)"@de, "Process Engineering (Bachelor)"@en ;
   skos:broader <fachbereich/verfahrenstechnik> ;
   skos:historyNote "Gleichnamiger Diplomstudiengang zum Sommersemester 2014 eingestellt." ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n226> ;
-  skos:inScheme <scheme> .
+  skos:inScheme <> .
 
 <studiengang/bioverfahrenstechnik> a skos:Concept ;
   skos:prefLabel "Bioverfahrenstechnik (Bachelor)"@de, "Bioprocess Engineering (Bachelor)"@en ;
   skos:broader <fachbereich/verfahrenstechnik> ;
   skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n226> ;
   skos:closeMatch <https://w3id.org/kim/hochschulfaechersystematik/n282> ;
-  skos:inScheme <scheme> .
+  skos:inScheme <> .
 
 <bachelor> a skos:Collection ;
   skos:prefLabel "Bachelor" ;
@@ -266,7 +266,7 @@ Laden Sie Ihre Lösung oder die obige Datei in das [SKOS testing tool](http://la
 * "urc - Unidirectionally Related Concepts": Optimierte SKOS-Vokabulare enthalten direkte beidseitige Verknüpfungen, um die maschinelle Nutzung zu beschleunigen. So sind in der Beispiellösung zwar die Begriffe auf der obersten Ebene mit `skos:topConceptOf` dem Schema zugeordnet. Das Gegenstück `skos:hasTopConcept` fehlt aber im Schema. Die Definition des Vokabulars müsste also noch wie folgt ergänzt werden:
 
   ```turtle
-  <scheme> skos:hasTopConcept <fachbereich/bauwesen>, <fachbereich/maschinenbau>, <fachbereich/verfahrenstechnik> .
+  <> skos:hasTopConcept <fachbereich/bauwesen>, <fachbereich/maschinenbau>, <fachbereich/verfahrenstechnik> .
   ```
 
 Ein weiteres interessantes Tool zur Validierung und Optimierung ist [Skosify](http://demo.seco.tkk.fi/skosify/skosify). Es ermöglicht die automatische Ableitung von Relationen und strukturiert die Syntax neu.
