@@ -2,22 +2,22 @@
 
 Empfehlenswerte Tools für die Arbeit mit SKOS-Vokabularen.
 
-### Management
+Management:
 
 * [iQvoc](https://iqvoc.net/)
 * [TemaTres](https://vocabularyserver.com)
 * [VocBench](http://vocbench.uniroma2.it/)
 
-### Validierung
+Validierung:
 
 * [SKOS testing tool](http://labs.sparna.fr/skos-testing-tool/)
 * [Skosify](https://github.com/NatLibFi/Skosify)
 
-### Veröffentlichung
+Veröffentlichung:
 
 * [Skosmos](http://skosmos.org)
 * [SkoHub Vocabs](https://github.com/hbz/skohub-vocabs)
 
-### Visualisierung
+Visualisierung:
 
 * [SKOS Play](http://labs.sparna.fr/skos-play/)
