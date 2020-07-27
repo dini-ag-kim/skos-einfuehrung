@@ -1,5 +1,7 @@
 # Einführung in SKOS am Beispiel von Open Educational Resources (OER)
 
+von [Felix Lohmeier](https://felixlohmeier.de) und [Adrian Pohl](https://lobid.org/team/ap)
+
 Diese Einführung soll die Nutzung der Beschreibungssprache **Simple Knowledge Organization System** (SKOS) für kontrollierte Vokabulare erleichtern. Wir diskutieren den Zweck und die Vorteile am Beispiel von [Open Educational Resources](https://de.wikipedia.org/wiki/Open_Educational_Resources) (OER).
 
 Diese Seite beinhaltet einen theoretischen Überblick. Wer direkt praktisch einsteigen möchte, kann im [Tutorial](skos-tutorial.md) ein SKOS-Vokabular von Grund auf erstellen und veröffentlichen.
@@ -64,3 +66,4 @@ SKOS wird im graph-basierten Datenmodell [Resource Description Framework](https:
 * [Anwendungsbeispiele](skos-anwendungsbeispiele.md)
 * [Software](skos-software.md)
 * [Literatur](skos-literatur.md)
+* [Über diese Einführung](about.md)

@@ -12,6 +12,7 @@
 </head>
 <body>
   <div id="app"></div>
+  <script src="docsify/docsify-edit-on-github.min.js"></script>
   <script>
     window.$docsify = {
       name: "Einführung in SKOS",
@@ -32,22 +33,7 @@
         successText: 'Kopiert!'
       },
       plugins: [
-        function(hook) {
-          var footer = [
-            '<hr/>',
-            '<footer>',
-            '<div style="text-align:center">',
-            'Diese <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Einführung in SKOS</span>',
-            ' von <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a href="https://felixlohmeier.de" target="_blank">Felix Lohmeier</a> und <a href="https://lobid.org/team/ap" target="_blank">Adrian Pohl</a></span> ',
-            'ist lizenziert unter <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>',
-            '</div>',
-            '</footer>'
-          ].join('');
-
-          hook.afterEach(function(html) {
-            return html + footer;
-          });
-        }
+        EditOnGithubPlugin.create("https://github.com/dini-ag-kim/skos-einfuehrung/blob/master/", null, "bearbeiten")
       ]
     }
   </script>
