@@ -7,7 +7,7 @@ Management und Veröffentlichung:
 * [iQvoc](https://iqvoc.net/)
 * [TemaTres](https://vocabularyserver.com)
 * [VocBench](http://vocbench.uniroma2.it/)
-* [SkoHub Vocabs](https://github.com/hbz/skohub-vocabs)
+* [SkoHub Vocabs](https://github.com/skohub-io/skohub-vocabs)
 * [Skosmos](http://skosmos.org) (nur Veröffentlichung)
 
 
