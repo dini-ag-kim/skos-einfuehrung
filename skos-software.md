@@ -10,7 +10,6 @@ Management und Veröffentlichung:
 * [SkoHub Vocabs](https://github.com/skohub-io/skohub-vocabs)
 * [Skosmos](http://skosmos.org) (nur Veröffentlichung)
 
-
 Validierung:
 
 * [SKOS testing tool](http://labs.sparna.fr/skos-testing-tool/)
@@ -19,3 +18,5 @@ Validierung:
 Visualisierung:
 
 * [SKOS Play](http://labs.sparna.fr/skos-play/)
+
+Eine umfangreichere [Liste von OpenSource Software für kontrollierte Vokabulare](https://github.com/gbv/bartoc.org/wiki/Software-for-controlled-vocabularies) (nicht nur SKOS) wird im Rahmen von BARTOC verwaltet.
