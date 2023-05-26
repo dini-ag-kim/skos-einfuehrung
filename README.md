@@ -8,7 +8,7 @@ Diese Einführung soll die Nutzung des **Simple Knowledge Organization System** 
 
 Die ersten Kapitel geben einen Überblick und erklären die Grundlagen. Wer direkt praktisch einsteigen möchte, kann im [Tutorial](skos-tutorial.md) ein SKOS-Vokabular von Grund auf erstellen und veröffentlichen.
 
-- [Einleitung](skos-einleitung.md) zur Motivation und Grundlagen von SKOS
+- [Einleitung](skos-einleitung.md) zu Motivation und Grundlagen von SKOS
 - [Kodierung](skos-kodierung.md) von SKOS in RDF/Turtle erklärt am Beispiel des Standard-Thesaurus Wirtschaft
 - [Elemente](skos-elemente.md) von SKOS zusammengefasst
 - [Tutorial](skos-tutorial.md) zur Erstellung und Veröffentlichung eines kontrollierten Vokabulars

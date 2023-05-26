@@ -24,9 +24,11 @@ Um diese für Menschen gut lesbare Beschreibung konsistent innerhalb eines techn
 
 Hier ist die Datumsangabe nach ISO 8601 (JJJJ-MM-TT) und die Sprachangabe nach ISO 639-1 (2-stellige Sprachkürzel) formatiert. Fehlerhafte Eingaben wie `2020-21-04 ` (Monat und Tag vertauscht) oder `dd` (nicht existentes Sprachkürzel) können bei der Eingabe vom System erkannt und mit einer Fehlermeldung quittiert werden. Im Element `subject` ist jede Zeichenkette erlaubt, d.h. Schreibfehler wie `Bauigneurwesen` oder ein ähnliches Wort wie `Bautechnik` werden vom System nicht als Problem erkannt.
 
-Nehmen wir an, wir wollen auf einem Hochschulschriftenserver die Fachdisziplin eindeutig erfassen, damit in einer Recherche danach gefiltert werden kann und in einer internen Statistik die Schriften nach Fachdisziplin gezählt werden können. Dann bietet es sich an, im Metadatenschema für das Element `subject` eine Wortliste zu definieren, die alle an der Hochschule vertretenen Fachdisziplinen beinhaltet. Eine Wortliste ist ein einfaches Beispiel für ein **kontrolliertes Vokabular**. Wie so ein Vokabular mit SKOS kodiert werden kann, wird [im folgenden Kapitel](skos-kodierung.md) erläutert.
+Nehmen wir an, wir wollen auf einem Hochschulschriftenserver die Fachdisziplin eindeutig erfassen, damit in einer Recherche danach gefiltert werden kann und in einer internen Statistik die Schriften nach Fachdisziplin gezählt werden können. Dann bietet es sich an, im Metadatenschema für das Element `subject` eine Wortliste zu definieren, die alle an der Hochschule vertretenen Fachdisziplinen beinhaltet. Eine Wortliste ist ein einfaches Beispiel für ein **kontrolliertes Vokabular**. Durch die begriffliche Kontrolle eines kontrollierten Vokabulars werden Schreibfehler, Bedeutungs- und Bezeichnungsvielfalt vermieden. Die dadurch erzeugte Einheitlichkeit fördert die Auffindbarkeit, Maschinenlesbarkeit und Nachnutzbarkeit der Metadaten.
 
-Durch die begriffliche Kontrolle eines kontrollierten Vokabulars werden Schreibfehler, Bedeutungs- und Bezeichnungsvielfalt vermieden. Die dadurch erzeugte Einheitlichkeit fördert die Auffindbarkeit, Maschinenlesbarkeit und Nachnutzbarkeit der Metadaten.
+Neben der Vereinheitlichung eigener Daten (hier Fachdisziplinen) helfen kontrollierte Vokabulare auch dabei um Daten aus verschiedenen Quellen eindeutig zusammenzuführen. So könnte im vorliegenden Beispiel die Autor*in statt als mehrdeutige Zeichenkette (vermutlich gibt es mehrere Personen mit dem Namen "Anne") mit einem Identifier aus der Gemeinsamen Normdatei (GND) oder dem Personen-Verzeichnis ORCID angegeben werden.
+
+Wie ein Vokabular mit SKOS kodiert werden kann, wird [im folgenden Kapitel](skos-kodierung.md) anhand von Beispielen erläutert.
 
 ## Was ist SKOS?
 
