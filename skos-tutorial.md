@@ -309,4 +309,4 @@ In jedem Fall bietet es sich an, einen Permalink-Dienst wie [w3id.org](https://w
 @base <https://w3id.org/kim/hochschulfaechersystematik/> .
 ```
 
-Wenn das Vokabular zur Nachnutzung geeignet ist, sollte es auch im [Basic Register of Thesauri, Ontologies & Classifications](https://bartoc.org/) (BARTOC) verzeichnet werden.
+Wenn das Vokabular zur Nachnutzung geeignet ist, sollte es auch im [Basic Register of Thesauri, Ontologies & Classifications](https://bartoc.org/) (BARTOC) eingetragen werden.
