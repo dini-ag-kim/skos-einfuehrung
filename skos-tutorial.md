@@ -108,11 +108,11 @@ Ergänzen Sie in allen Begriffen die hierarchischen Relationen. Beispiel:
   skos:topConceptOf <> .
 ```
 
-### 5. Externe Links
+### 5. Links auf andere Vokabulare
 
 Ein Vorteil von SKOS ist die Möglichkeit, maschinenlesbare Bezüge zu anderen Vokabularen herzustellen. In unserem Szenario sollen zu statistischen Zwecken die Studiengänge der DESTATIS Hochschulfächersystematik zugeordnet werden. Diese Systematik [liegt bei SkoHub bereits als SKOS-Vokabular vor](https://w3id.org/kim/hochschulfaechersystematik/scheme), so dass wir direkt darauf verlinken können.
 
-In SKOS können dazu verschiedene Elemente verwendet werden, darunter `skos:exactMatch` für eine exakte Übereinstimmung oder `skos:closeMatch` für eine Ähnlichkeit. Äquivalent zu "broader" bzw. "narrower" können mit `skos:broadMatch` und `skos:narrowMatch` auch hierarchische Beziehungen zu externen Vokabularen definiert werden.
+In SKOS können dazu verschiedene Elemente verwendet werden, darunter `skos:exactMatch` für eine exakte Übereinstimmung oder `skos:closeMatch` für eine Ähnlichkeit. Äquivalent zu "broader" bzw. "narrower" können mit `skos:broadMatch` und `skos:narrowMatch` auch hierarchische Beziehungen als Mappings zu anderen Vokabularen definiert werden.
 
 In unserem Beispiel gibt es exakte Übereinstimmungen. Beispiel:
 
@@ -120,7 +120,7 @@ In unserem Beispiel gibt es exakte Übereinstimmungen. Beispiel:
 <bauwesen> skos:exactMatch <https://w3id.org/kim/hochschulfaechersystematik/n68> .
 ```
 
-Recherchieren Sie in der Hochschulfächersystematik die passenden Einträge und ergänzen Sie diese in allen Begriffen.
+Recherchieren Sie in der Hochschulfächersystematik die passenden Einträge und ergänzen Sie diese in allen Begriffen!
 
 ### 6. Kollektionen
 

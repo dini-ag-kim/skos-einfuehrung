@@ -76,7 +76,7 @@ Zusammenfassend eine Übersicht über alle in SKOS verwendeten Elemente:
 | [skos:narrower](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#semantic-relations) | dieser Begriff hat folgende direkte Unterbegriffe ...        |
 | [skos:narrowerTransitive](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#semantic-relations) | wird technisch benutzt, um abgeleitete hierarchische Beziehungen zu definieren; üblicherweise bei Bedarf mit einem Reasoner generiert |
 | [skos:related](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#semantic-relations) | dieser Begriff steht mit dem folgenden Begriff in Verbindung (assoziiert) ... |
-| [skos:semanticRelation](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#semantic-relations) | wird aus den übrigen Relationen und Mappings (siehe externe Links unten) abgeleitet und üblicherweise nicht manuell verwendet |
+| [skos:semanticRelation](https://www.w3.org/TR/2009/REC-skos-reference-20090818/#semantic-relations) | wird aus den übrigen Relationen und Mappings (siehe unten) abgeleitet und üblicherweise nicht manuell verwendet |
 
 ```turtle
 <http://zbw.eu/stw/descriptor/12036-5> a skos:Concept ;
@@ -120,7 +120,7 @@ _:b3 rdf:first <http://zbw.eu/stw/descriptor/12668-3> ;
     rdf:rest rdf:nil .
 ```
 
-## Externe Links
+## Mappings
 
 | Element                                                      | Beschreibung                                                 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |

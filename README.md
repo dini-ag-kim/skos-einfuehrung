@@ -2,7 +2,7 @@
 
 von [Felix Lohmeier](https://felixlohmeier.de), [Adrian Pohl](https://lobid.org/team/ap) und [Jakob Voß](http://www.wikidata.org/entity/Q15303972)
 
-Diese Einführung soll die Nutzung des **Simple Knowledge Organization System** (SKOS) für kontrollierte Vokabulare erleichtern. Wir diskutieren den Zweck und die Vorteile am Beispiel von [Open Educational Resources](https://de.wikipedia.org/wiki/Open_Educational_Resources) (OER).
+Diese Einführung soll die Nutzung des **Simple Knowledge Organization System** (SKOS) für kontrollierte Vokabulare erleichtern. Wir demonstrieren den Zweck und die Vorteile am Beispiel von [Open Educational Resources](https://de.wikipedia.org/wiki/Open_Educational_Resources) (OER).
 
 ## Inhalt
 

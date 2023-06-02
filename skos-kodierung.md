@@ -125,9 +125,9 @@ Für die Verknüpfung von Thesaurus-Einträgen mit Systemstellen einer zusätzli
 
 Auf der Webseite werden die Verweise mit `skos:broader` unter zwei Überschriften ("Oberbegriffe" und "Thesaurus Systematik") gruppiert. Solch eine Gruppierung ist nicht Teil der SKOS-Kodierung sondern erfolgt wahrscheinlich in der Anzeige durch Analyse mit welcher Zeichenkette die Identifier anfangen (Oberbegriffe: `http://zbw.eu/stw/descriptor` und Thesaurus Systematik: `http://zbw.eu/stw/thsys`).
 
-### Links zu anderen Thesauri und Vokabularen
+### Mappings zu anderen Vokabularen
 
-Für Links zu Übereinstimmenden Einträgen in (anderen) Vokabulare gibt es in SKOS drei Prädikate (`skos:relatedMatch`, `skos:closeMatch` und `skos:exactMatch`) die sich nach Grad der Genauigkeiten unterscheiden. In diesem Beispiel gehen die Autor*innen von einer exakten Übereinstimmung aus und deshalb wird vom Standard-Thesaurus Wirtschaft `skos:exactMatch` für die Links zu externen Vokabularen verwendet.
+Für Links ("Mappings") zu übereinstimmenden Einträgen in (anderen) Vokabulare gibt es in SKOS drei Prädikate (`skos:relatedMatch`, `skos:closeMatch` und `skos:exactMatch`) die sich nach Grad der Genauigkeiten unterscheiden. In diesem Beispiel gehen die Autor*innen in drei Fällen von einer exakten Übereinstimmung aus (`skos:exactMatch`). Der GND-Begriff "Innerbetriebliche Kooperation" ist dagegen spezifischer als der STW-Eintrag, so dass hier ein übergeordnetes Mapping verwendet wird (`skos:broadMatch`).
 
 ```turtle
 <http://zbw.eu/stw/descriptor/19040-0>
@@ -135,7 +135,9 @@ Für Links zu Übereinstimmenden Einträgen in (anderen) Vokabulare gibt es in S
         <http://aims.fao.org/aos/agrovoc/c_1855>,
         <http://dbpedia.org/resource/Cooperation>,
         <http://lod.gesis.org/thesoz/concept_10042918>,
-        <https://d-nb.info/gnd/4032386-9> .
+        <https://d-nb.info/gnd/4032386-9> ;
+    skos:broadMatch
+        <https://d-nb.info/gnd/027061-0> .
 ```
 
 Die Quellenangabe `(aus DBpedia)` steht nicht explizit in der SKOS-Datei. Wahrscheinlich erfolgt die Darstellung auf der Webseite auch hier wieder über eine Auswertung des Adressbestandteils im Identifier mit Hilfe einer Übersetzungstabelle, also beispielsweise `dbpedia.org` -> "(aus DBpedia)".
@@ -188,6 +190,8 @@ Unser obiges Beispiel könnte im Format RDF/Turtle also so aussehen:
         <http://dbpedia.org/resource/Cooperation>,
         <http://lod.gesis.org/thesoz/concept_10042918>, 
         <https://d-nb.info/gnd/4032386-9> ;
+    skos:broadMatch
+        <https://d-nb.info/gnd/027061-0> .
     skos:inScheme <http://zbw.eu/stw> .
 ```
 
