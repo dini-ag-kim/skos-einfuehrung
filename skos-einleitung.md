@@ -41,14 +41,15 @@ SKOS basiert auf dem graph-orientierten Datenmodell [Resource Description Framew
 
 ## Verwendungszwecke
 
-- Als Lehrende\*r können Sie vorhandene SKOS-Vokabulare nutzen, um Ihre Lehrmaterialien mit geeigneten fachspezifischen Schlagwörtern (z.B. [Standard-Thesaurus Wirtschaft](http://bartoc-skosmos.unibas.ch/STW/en/?clang=de)) zu beschreiben oder bestimmten Studienfächern (z.B. [Destatis-Systematik der Studienfächer](https://skohub.io/dini-ag-kim/hochschulfaechersystematik/heads/master/w3id.org/kim/hochschulfaechersystematik/scheme.html)) zuzuordnen.
-- Als Betreiber\*in eines Hochschulrepositoriums können Sie vorhandene SKOS-Vokabulare nutzen, um die Materialien zu erschließen.
-- Als Entwickler\*in einer Infrastruktur zum Erstellen, Publizieren oder Teilen von OER können Sie SKOS-Vokabulare einbetten oder sogar die Erstellung von SKOS-Vokabularen in der Software unterstützen, um Werte in Metadaten kontrolliert zu erfassen.
+- Als Autor\*in oder Herausgeber\*in können sie SKOS nutzen um ihre Publikationen mit eindeutigen Begriffen statt mit freien, mehrdeutigen Schlagwörtern **inhaltlich zu beschreiben**. Beispielsweise können sie als Lehrende\*r ihre Lehrmaterialien geeigneten Einträgen aus vorhandenen SKOS-Vokabularen wie dem [Standard-Thesaurus Wirtschaft](https://zbw.eu/stw/) und der [Destatis-Systematik der Studienfächer](https://w3id.org/kim/hochschulfaechersystematik/scheme)) zuzuordnen.
+- Wenn sie als als Herausgeber\*in oder Bibliothekar\*in eine Sammlung von Publikationen verwalten, beispielsweise ein Hochschulrepositorium, können sie die Materialien mit SKOS-Vokabularen **einheitlich erschließen**.
+- Als Entwickler\*in von Infrastruktur und Software zum Erstellen, Publizieren oder Teilen von OER oder anderen Publikationen können Sie SKOS-Vokabulare einbetten oder sogar die Erstellung von SKOS-Vokabularen in der Software unterstützen, um Metadaten-Werte **kontrolliert zu erfassen**.
 
 ## Vorteile
 
-- Die Maschinenlesbarkeit von SKOS-Vokabularen fördert die Auffindbarkeit der Lehrmaterialien und ermöglicht das automatische Laden von vertiefenden Informationen zu den Begriffen (Lookup).
-- Durch die Veröffentlichung von SKOS-Vokabularen wird die Nachnutzung der Vokabulare erleichtert und damit langfristig mehr Einheitlichkeit erzielt oder zumindest der Arbeitsaufwand beim Erstellen von Vokabularen reduziert.
-- Die Unterstützung von Mehrsprachigkeit fördert die Entwicklung von international genutzten Vokabularen.
-- Die Kompatibilität zum Semantic Web ermöglicht Links zu Begriffen in externen SKOS-Vokabularen oder sogar Links zu externen Webressourcen.
+- Die Maschinenlesbarkeit von SKOS-Vokabularen fördert die **Auffindbarkeit** von Lehrmaterialien und anderen Publikationen.
+- Zu Begriffen können Definitionen und **vertiefende Informationen** nachgeschlagen werden.
+- Durch die Veröffentlichung von SKOS-Vokabularen wird die **Nachnutzung der Vokabulare** erleichtert und damit langfristig mehr Einheitlichkeit erzielt oder zumindest der Arbeitsaufwand beim Erstellen von Vokabularen reduziert.
+- Die Unterstützung von **Mehrsprachigkeit** fördert die Entwicklung von international genutzten Vokabularen.
+- Die Kompatibilität zum Semantic Web ermöglicht **Verlinkung** zu Begriffen in anderen SKOS-Vokabularen und zu weiteren Webressourcen.
 
